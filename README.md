@@ -24,7 +24,7 @@ attiny1634.menu.clock.6external=6 MHz (external)
 attiny1634.menu.clock.6external.bootloader.low_fuses=0xED
 ```
 
-See how 6.external is both a "leaf" and a "branch" at the same time. So to deal with that those things I came up with the convention of making everything in the tree an object and then preceding comments and whitespace goes on __comments and the actual value if the path is a leaf goes in __value. Which is slightly awkward but I don't have better ideas yet.
+See how 6.external is both a "leaf" and a "branch" at the same time. So to deal with those things I came up with the convention of making everything in the tree an object and then preceding comments and whitespace goes on __comments and the actual value if the path is a leaf goes in __value. Which is slightly awkward but I don't have better ideas yet.
 
 ## Notes about the order
 
