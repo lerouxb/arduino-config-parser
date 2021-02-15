@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 
 const Assert = require('assert');
 const Fs = require('fs');
@@ -6,7 +7,7 @@ const Fs = require('fs');
 const Parse = require('../lib/parse');
 
 
-const filename = process.argv[2]
+const filename = process.argv[2];
 Assert.ok(filename, 'Usage: bin/txt-to-json path/to/boards.txt');
 
 

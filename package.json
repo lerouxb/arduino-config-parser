@@ -2,7 +2,7 @@
   "name": "arduino-config-parser",
   "version": "1.0.0",
   "description": "Parse and format arduino's boards.txt, platform.txt and programmers.txt",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "lab -t 100 -a @hapi/code -L"
   },
