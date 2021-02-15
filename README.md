@@ -26,6 +26,8 @@ attiny1634.menu.clock.6external.bootloader.low_fuses=0xED
 
 See how 6.external is both a "leaf" and a "branch" at the same time. So to deal with those things I came up with the convention of making everything in the tree an object and then preceding comments and whitespace goes on __comments and the actual value if the path is a leaf goes in __value. Which is slightly awkward but I don't have better ideas yet.
 
+The easiest way to see this and understand what I'm on about is to run the tests. This will parse and then format all the fixtures and then put them in a folder called output in the root. You can then use a nice GUI diff viewer that will allow you to diff two directories (I used Meld) and diff the output and text/fixtures folders. Scroll through there and look at how some lines' order jiggled around. That's probably also the easiest way to reason for yourself whether that matters or if the result is in fact better than what you started with. Or not.
+
 ## Notes about the order
 
 The order of the lines in the .txt files can be totally random. You can reverse those two lines in the example above, you can have multiple child branches in any order following it.. I can't easily maintain the exact order which means if you diff what you get when you format the file back out with the original some lines will be moved around. I think the result is functionally equivalent and probably better at least in most cases, though. I do try and keep the order within a "folder", though, because those probably matter for menu items.
